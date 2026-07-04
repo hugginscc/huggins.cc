@@ -4,29 +4,50 @@
   <head>
   <title>Huggins.cc</title>
   <meta charset="UTF-8">
-  <style>
+<style>
     body {
       background-color: olive;
       color: white;
-      font-family: Arial;
+      font-family: Arial, sans-serif;
       max-width: 700px;
       margin: 40px auto;
       line-height: 1.6;
+      padding: 0 20px;
+    }
+
+    /* Target the list container to remove default bullets if desired */
+    ul {
+      list-style-type: none; /* Removes the bullet points */
+      padding-left: 0;       /* Removes the default left indent */
+    }
+
+    /* Space out the individual list items vertically */
+    li {
+      margin-bottom: 10px;
+    }
+
+    /* Force all links inside the list to be white */
+    ul a {
+      color: white;
+      text-decoration: underline; /* Keeps the underline so people know they are clickable */
+    }
+
+    /* Optional: Slightly change the link color on hover so it feels responsive */
+    ul a:hover {
+      color: #dddddd;
     }
   </style>
 </head>
 
 <body>
 
-<p>Welcome to my site.</p>
+  <p>Welcome to my site.</p>
 
-<ul>
-    <li>
-      <strong>Links:</strong> 
-      <a href="https://www.supremecourt.gov" target="_blank">www.supremecourt.gov</a> | 
-      <a href="https://crimeresearch.org" target="_blank">crimeresearch.org</a>
-    </li>
+  <strong>Links:</strong>
+  <ul>
+    <li><a href="https://www.supremecourt.gov" target="_blank">www.supremecourt.gov</a></li>
+    <li><a href="https://crimeresearch.org" target="_blank">crimeresearch.org</a></li>
   </ul>
-</body>
 
+</body>
 </html>
